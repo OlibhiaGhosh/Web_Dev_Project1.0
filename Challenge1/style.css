@@ -2,15 +2,15 @@ html{
     background-color: rgba(198, 205, 211, 0.603);
 }
 .main{
-    width: 400px;
-    height:600px;
+    width: 27vw;
+    height:84vh;
     background-color: rgb(255, 255, 255);
-    margin-left: 550px;
+    margin-left: 36vw;
     border-radius: 10px;
     display:flex ;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
 }
 .content {
     font-family: Georgia, 'Times New Roman', Times, serif;
