@@ -1,14 +1,17 @@
 html{
     background-color: rgba(198, 205, 211, 0.603);
 }
+body{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
 .main{
     width: 400px;
     height:600px;
     background-color: rgb(255, 255, 255);
     margin-left: 550px;
-    border-radius: 10px;
-     
-    
+    border-radius: 10px;   
 }
 .content {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -38,8 +41,7 @@ html{
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 10%;
-    
-}
+}   
 h1 {
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
