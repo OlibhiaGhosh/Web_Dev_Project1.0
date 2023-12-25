@@ -1,61 +1,71 @@
 html{
     background-color: rgba(198, 205, 211, 0.603);
 }
-body{
-    display:flex ;
-    justify-content: center;
-    align-items: center;
-}
 .main{
     width: 400px;
     height:600px;
     background-color: rgb(255, 255, 255);
     margin-left: 550px;
-    border-radius: 10px;   
+    border-radius: 10px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
 }
 .content {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;  
     background-color: rgb(255, 255, 255);
-    margin-left: 10px;
+    margin-left: 1vw;
     color: rgb(116, 119, 122);
 }
 
 
 .button{
-    margin-right:10px;
+    margin-right:1vw;
     height: 30px;
-    margin-top: 20px;
     border-radius: 30%;
     border-color: #dde0dc;
     font-size: 20px;
     color: rgb(116, 119, 122);
     background-color: rgb(255, 255, 255);
     
+    
+    
 }
 .button1{
-    margin-left: 25px;
+    margin-left: 1.5vw;
 }
 .image{
     width: 380px;
-    margin-top: 10px;
-    margin-left: 10px;
     border-radius: 10%;
+    display: flex;
+    align-items: center;
 }   
 h1 {
     background-color: rgb(255, 255, 255);
-    margin-left: 10px;
+    margin-left:1vw;
+    display: flex;
+    justify-content:start;
+    align-self: flex-start;
     
 }
 .button2{
     margin-top: 20px;
     width: 150px;
     height: 45px;
-    margin-left: 125px;
     border-radius: 40%;
     border-color:rgb(255, 255, 255) ;
     background-color: rgb(206, 235, 244);
     color: rgb(78, 42, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
+}
+.grpofbutton{
+   display: flex;
+   justify-content:start;
+   align-self: flex-start;
 }
