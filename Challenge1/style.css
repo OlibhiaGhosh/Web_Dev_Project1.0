@@ -34,13 +34,15 @@ html{
     
 }
 .button1{
-    margin-left: 1.5vw;
+    margin-left: 1vw;
 }
 .image{
-    width: 380px;
+    width: 24vw;
+    height:40vh;
     border-radius: 10%;
     display: flex;
     align-items: center;
+    
 }   
 h1 {
     background-color: rgb(255, 255, 255);
@@ -51,9 +53,9 @@ h1 {
     
 }
 .button2{
-    margin-top: 20px;
-    width: 150px;
-    height: 45px;
+    margin-top: 3vh;
+    width: 12vw;
+    height: 6vh;
     border-radius: 40%;
     border-color:rgb(255, 255, 255) ;
     background-color: rgb(206, 235, 244);
@@ -61,11 +63,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     
 
 }
 .grpofbutton{
+   display: inline-block;
    display: flex;
-   justify-content:start;
    align-self: flex-start;
 }
