@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex flex-col items-center space-y-7 justify-center pt-36">
+      <div
+        class="card flex flex-col space-y-6 border-2 border-black rounded-lg bg-gradient-to-r from-cyan-300 via-cyan-500 via-70% to-cyan-700 dark:bg-white sm:w-[424px] h-max w-[324px] px-6 py-10"
+      >
+        <div class="name font-bold text-4xl"></div>
+        <div class="flex space-x-4 profile">
+          <div class="font-semibold">Username :</div>
+          <div class="username font-semibold"></div>
+        </div>
+        <div class="details flex space-x-4">
+          <div class="font-semibold">No. of followers :</div>
+          <div class="followers font-semibold"></div>
+        </div>
+        <div class="message text-right text-black text-sm"></div>
+      </div>
+      <div class="flex flex-col max-sm:space-y-6 sm:flex-row sm:space-x-10">
+        <button
+          class="generate w-24 h-10 rounded-lg border-2 border-black text-center bg-black text-white hover:bg-gray-300 hover:text-black font-bold"
+        >
+          Generate
+        </button>
+        <button
+          class="reset w-24 h-10 rounded-lg border-2 border-black text-center bg-gray-300 text-black hover:bg-black hover:text-white font-bold"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script>
+      const name = document.querySelector(".name");
+      const username = document.querySelector(".username");
+      const followers = document.querySelector(".followers");
+      const message = document.querySelector(".message");
+      const genbutton = document.querySelector(".generate");
+      const resetbutton = document.querySelector(".reset");
+
+      const promiseone = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          let error = false;
+          if (!error) {
+            resolve({
+              Name: "Olibhia",
+              Username: "@olibhiaghosh",
+              Followers: 104,
+            });
+          } else {
+            reject("error");
+          }
+        }, 1000);
+      });
+      async function consumepromiseone() {
+        try {
+          const response = await promiseone;
+          name.textContent = response.Name;
+          username.textContent = response.Username;
+          followers.textContent = response.Followers;
+          message.textContent = "...succesfully extracted";
+        } catch (error) {
+          message.textContent = error;
+        }
+      }
+      genbutton.addEventListener("click", function (e) {
+        consumepromiseone();
+      });
+      resetbutton.addEventListener("click", function (e) {
+        name.textContent = "";
+        username.textContent = "";
+        followers.textContent = "";
+        message.textContent = "click on generate to generate new card";
+      });
+    </script>
+  </body>
+</html>
